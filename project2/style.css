@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+   background-color: honeydew; 
+}
+
+.navbar{
+    padding: 0 30px 0 30px;
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    margin-right:4px;
+}
+
+.logotext{
+    font-size: 24px;
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navlist{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;   
+}
+
+.navlist li{
+    list-style: none;
+}
+
+.navlist li a{
+    text-decoration: none;
+    display: inline-block;
+    padding: 4px;
+    border-radius: 4px;
+    transition:transform 500ms ease-out;
+    color: black;
+    font-size: 18px;
+}
+
+.navlist li a:hover{
+    background-color: black;
+    color:white;
+    transform:scale(1.08);
+}
+
+.bar{
+    display: none;
+}
+
+.hide{
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom-left-radius:10px;
+    border-top-left-radius:10px ;
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: -2px 4px 12px rgba(0,0,0,0.1);
+}
+
+.hide li{
+    list-style: none;
+}
+
+.hide li a{
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:10px 30px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    transition:transform 500ms ease-out;
+}
+
+.hide li a:hover{
+    transform:scale(1.2);
+}
+
+
+.home{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeh1{
+    font-family: "Barriecito", system-ui;
+    font-size: 40px;
+    text-align: center;
+}
+
+h1{
+    font-size: 32px;
+}
+
+p{
+    width: 75%;
+    text-align: center;
+}
+
+.about{
+    background-color: white;
+    width: 100%;
+    height:auto;
+    margin-top: 40px;
+    padding: 20px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+h2{
+    font-family:"Barriecito", system-ui ;
+    text-align: center;
+}
+
+.card-container{
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:30px;
+    transition:all ease-out 500ms;
+}
+
+.cards{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    height:180px;
+    width: 300px;
+    background-color: honeydew;
+    box-shadow: -2px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+}
+
+.cards:hover{
+    cursor: pointer;
+    transform: scale(1.08);
+}
+
+.meowmes{
+    width: 100%;
+    height: auto;
+    margin-top: 40px;
+    padding: 0 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards2{
+    margin-top: 30px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    height:300px;
+    width: 450px;
+    background-color: white;
+    box-shadow: -2px 4px 10px rgba(0,0,0,0.1);
+    border-radius: 6px;
+    transition:all ease-out 0.5s;
+}
+
+.cards, .cards2 {
+    margin: 0; /* Remove any margins */
+}
+
+.cards2:hover{
+    cursor: pointer;
+    transform: skewY(4deg);
+}
+
+.contact{
+    width: 100%;
+    height:auto;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    padding: 20px 30px 0 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+footer{
+    background-color: white;
+    width: 100%;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media only screen and (max-width:768px){
+    .navlist .mobile{
+        display: none;
+    }
+
+    .navlist .bar{
+        display: block;
+    }
+
+    .card-container{
+        flex-direction: column;
+    }
+
+
+}
