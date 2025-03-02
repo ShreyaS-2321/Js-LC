@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Meowtopia</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+      integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Barriecito&display=swap");
+    </style>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+        </style>
+        
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <div class="container">
+        <img src="logo.png" class="logo" alt="" width="72px" />
+        <h1 class="logotext">Meowtopia</h1>
+      </div>
+      <ul class="navlist">
+        <li class="mobile"><a href="#home">Home</a></li>
+        <li class="mobile"><a href="#about">About</a></li>
+        <li class="mobile"><a href="#meowmes">Meowmes</a></li>
+        <li class="mobile"><a href="#contact">Contact Us</a></li>
+        <li onclick="showbar()" class="bar">
+          <a href="#"><i class="fa-solid fa-bars"></i></a>
+        </li>
+      </ul>
+      <ul class="hide">
+        <li class="mobile"><a href="#home">Home</a></li>
+        <li class="mobile"><a href="#about">About</a></li>
+        <li class="mobile"><a href="#meowmes">Services</a></li>
+        <li class="mobile"><a href="#contact">Contact Us</a></li>
+        <li onclick="hidenav()" class="close">
+          <a href="#"><i class="fa-solid fa-xmark"></i></a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Navbar ends -->
+
+    <!-- Home Section -->
+    <section class="home" id="home">
+      <h1 class="homeh1">Welcome to Meowtopia – Where Humans Serve and Cats Approve!😼</h1>
+      <img src="cat1.jpg" alt="" width="300px" />
+      <audio autoplay src="oo_ee_a_e_a.mp3"></audio>
+      <p>
+        Welcome, hooman! You have entered Meowtopia, the internet’s finest
+        establishment where cats rule, and you… well, you exist to admire us. If
+        you’re not here to provide snacks or belly rubs (on our terms), at least
+        stick around for the purrfectly curated content, services, and general
+        <span style="font-style: italic">cat-itude</span>.
+      </p>
+      <p>
+        <span style="color: red; font-weight: 700">Warning:</span> Spending too
+        much time here may result in speaking fluent "meow" and developing a
+        strong urge to knock things off tables.
+      </p>
+    </section>
+    <!-- Home section ends -->
+
+    <!-- About Section -->
+    <section class="about" id="about">
+      <h1>About Us 🐾</h1>
+      <h2>Who are we? More importantly, do you have food?😻</h2>
+      <p>At Meowtopia, we believe in three things:</p>
+      <div class="card-container">
+      <div class="cards"><img src="Crown.svg" alt=""><p>Cats are superior</p></div>
+      <div class="cards"><img src="globe.svg" alt=""><p>The internet was built for cat memes</p></div>
+      <div class="cards"><img src="attitude.svg" alt=""><p>If you hear something crash at 3 AM, mind your business</p></div>
+    </div>
+    </section>
+    <!-- About Section ends -->
+
+    <!-- Meowmes Section -->
+     <section class="meowmes" id="meowmes">
+        <h1>Meowmes 😹</h1>
+        <h2>404: Seriousness Not Found💻</h2>
+        <div class="card-container">
+            <div class="cards2"><p>Me trying to understand why my code works after randomly adding a semicolon;</p><img width="150px" src="confused cat.jpg" alt=""></div>
+            <div class="cards2"><p>Me after watching one YouTube tutorial: I am now a full-stack developer</p><img width="150px" src="stupid cat.jpg" alt=""></div>
+            <div class="cards2"><p>Me staring at my laptop, hoping the code will debug itself</p><img width="150px" src="lazy cat.jpg" alt=""></div>
+        </div>
+        <div class="card-container">
+            <div class="cards2"><p>When you submit the assignment at 11:59, and the prof says the deadline was extended to next week</p><img width="150px" src="angry cat.jpg" alt=""></div>
+            <div class="cards2"><p>Me looking at my friend’s ‘simple code’ that’s 500 lines long</p><img width="150px" src="what cat.jpg" alt=""></div>
+            <div class="cards2"><p>Me adding ‘Proficient in Python’ to my resume after printing ‘Hello, World!’</p><img width="150px" src="smirk cat.jpg" alt=""></div>
+        </div>
+     </section>
+
+     <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <h1>Contact Us 📞</h1>
+        <h2>Actually… Don’t 😾</h2>
+        <p>Look, we’re cats. We don’t do <i>customer service.</i> We might glance at your message, judge it silently, and then go take a nap.</p>
+        <img src="grumpy cat.jpg" width="250" alt="">
+      </section>
+
+      <!-- footer-->
+       <footer>
+        <h4>@meowright | Moewtopia</h4>
+       </footer>
+     
+
+    <script src="script.js"></script>
+  </body>
+</html>
