@@ -20,19 +20,16 @@ body{
     padding: 20px;
     width: auto;
     height: auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
     border-radius: 8px;
     border:1px solid black;
-    gap: 20px;
 }
 
 h1{
     font-size: 40px;
     font-weight: 600;
     color: #9cee69;
+    margin-top: 10px;
+    margin-bottom: 20px;
 }
 
 .input{
@@ -40,7 +37,7 @@ h1{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 #input-field{
@@ -48,7 +45,7 @@ h1{
     width:70%;
     outline: none;
     border: none;
-    border-radius: 4px;
+    border-radius: 30px;
     padding: 6px 8px;
     font-size: 18px;
     font-weight: 600;
@@ -61,7 +58,7 @@ h1{
     width:30%;
     padding: 6px 8px;
     border:1px solid #9cee69;
-    border-radius: 4px;
+    border-radius: 30px;
     font-size: 18px;
     font-weight: 600;
     cursor: pointer;
@@ -70,6 +67,54 @@ h1{
 ul li{
     list-style: none;
     width: 100%;
-    border: 1px solid black;
-    padding: 10px;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 10px 60px;
+    margin-block:20px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    user-select: none;
 }
+
+ul li::before{
+    content:"";
+    background: url(undone\ task.svg);
+    background-size: cover;
+    position: center;
+    position: absolute;
+    top: 5px;
+    left: 8px;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.done{
+    background-color: #383838;
+    border: none;
+}
+
+.done::before{
+    background: url(done\ task.svg);
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+}
+
+span{
+    position: absolute;
+    background-color: #383838;
+    top:5px;
+    right: 8px;
+    font-size: 24px;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+    text-align: center;
+    cursor: pointer;
+}
+
+/* ul li.done span:hover{
+    background-color: #9cee69;
+} */
