@@ -1,0 +1,75 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+body{
+    background-color:#383838;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+.todo-container{
+    background-color: black;
+    padding: 20px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border:1px solid black;
+    gap: 20px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: 600;
+    color: #9cee69;
+}
+
+.input{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+#input-field{
+    background-color: #383838;
+    width:70%;
+    outline: none;
+    border: none;
+    border-radius: 4px;
+    padding: 6px 8px;
+    font-size: 18px;
+    font-weight: 600;
+    color: white;
+}
+
+.btn{
+    background-color: black;
+    color: #9cee69;
+    width:30%;
+    padding: 6px 8px;
+    border:1px solid #9cee69;
+    border-radius: 4px;
+    font-size: 18px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+ul li{
+    list-style: none;
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+}
