@@ -1,0 +1,154 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.header{
+    width: 100%;
+    height: 80px;
+    background-color: #231d3c;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    width:48px;
+    margin-left: 30px;
+}
+
+.menu{
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.menus{
+    list-style: none;
+    display: flex;
+    margin: 30px;
+    cursor: pointer;
+}
+
+.menus:hover{
+    color: lawngreen;
+}
+
+#btn{
+   background-color: white;
+   padding: 10px 12px;
+   border-radius: 8px;
+   color: #231d3c; 
+   font-weight: 500;
+   cursor: pointer;
+   transition: all 0.38s ease;
+}
+
+#btn:hover{
+    transform: scale(1.08);
+}
+
+.about{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#name{
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgb(109, 216, 2);
+}
+
+.left-div{
+    width: 50%;
+    font-size: 36px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p{
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.right-div{
+    width: 40%;
+    display: flex;
+    justify-content: center;
+}
+
+.about-img{
+    width: 400px;
+    height: 400px;
+}
+
+.experience{
+    width: 100%;
+    height: 450px;
+}
+
+h1{
+    margin-top: 16px;
+    font-size: 40px;
+    display: flex;
+    justify-content: center;
+    font-weight: 700;
+    color: rgb(109, 216, 2);
+    margin-bottom: 30px;
+}
+
+.container{
+    width: 90%;
+    margin: auto;
+    height: 350px;
+    border-radius: 20px;
+    background-color: #caccff;
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+
+.card{
+    width: 350px;
+    height: 200px;
+    border-radius: 16px;
+    background-color: #231d3c;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    cursor: pointer;
+    transition: all 0.38s ease;
+}
+
+.card:hover{
+    transform:scale(1.02);
+}
+
+.exp-img{
+    width: 90px;
+}
+
+h2{
+    margin-top: 8px;
+    color:rgb(109, 216, 2);
+}
+
+.card p{
+    margin-top: 2px;
+    font-size: 18px;
+}
+
+.project{
+    width:100%;
+    height:400px;
+}
+
